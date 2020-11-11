@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+
 
 const Waiter = () => { 
 
     return (
       
-  <div> {console.log('hh')} </div>
+  <div> {console.log('holas')} </div>
     )
 }
 

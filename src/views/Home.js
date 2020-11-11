@@ -16,10 +16,10 @@ const Home = () => {
      <div className='Buttons'>
             <button className="Button">
               
-            <Link to={'/mesero'}><h2>Mesero</h2></Link>
+            <Link to={'/waiter'}><h2>Mesero</h2></Link>
             </button>
             <button className="Button">
-            <Link to={'/cocinero'}><h2>Cocinero</h2></Link>
+            <Link to={'/chef'}><h2>Cocinero</h2></Link>
             </button>
            
             </div>
