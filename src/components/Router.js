@@ -1,6 +1,9 @@
 import '../css/main.css';
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+
+
+/*Components*/
 import Home from '../views/Home';
 import Waiter from '../views/waiter';
 import Chef from '../views/chef'
