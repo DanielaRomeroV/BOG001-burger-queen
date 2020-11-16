@@ -1,15 +1,19 @@
 import React from 'react';
 
+import logo from '../img/logo2.png';
 import Order from '../components/Order'
 
 const Waiter = () => { 
 
     return (
       <div className="waiter-view">      
-          <div className="Soy"><h1>Bienvenido</h1>
-          </div>
+         
+         <header className="nav-bar">
+          <img src={logo} alt="logo"/></header>
           <Order></Order>
           </div>
+        
+          
     )
 }
 

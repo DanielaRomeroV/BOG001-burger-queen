@@ -29,7 +29,7 @@ const Order = () => {
                 <thead>
                     <tr>
                         <th><h3>Productos</h3></th>
-                        <th><h3>Cantidad</h3></th>
+                        <th><h3>Cant</h3></th>
                         <th><h3>Precio</h3></th>
                     </tr>
                 </thead>
