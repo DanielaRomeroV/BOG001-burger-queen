@@ -1,12 +1,15 @@
 import React from 'react';
 
+import Order from '../components/Order'
 
 const Waiter = () => { 
 
     return (
-      <div className="Home">   
-      
-          <div className="Soy"><h1>Holi soy mesero</h1></div></div>
+      <div className="waiter-view">      
+          <div className="Soy"><h1>Bienvenido</h1>
+          </div>
+          <Order></Order>
+          </div>
     )
 }
 

@@ -12,5 +12,9 @@ body {
 
 
 
+/*Views*/
 @import 'views/home.scss';
+@import 'views/waiter.scss';
+/*Components*/
 @import 'components/notFound.scss';
+@import 'components/Order.scss';
