@@ -19,7 +19,7 @@ const Home = () => {
             <Link to={'/orden-mesero'}><h2>Mesero</h2></Link>
             </button>
             <button className="Button">
-            <Link to={'/chef-Pedidos'}><h2>Cocinero</h2></Link>
+            <Link to={'/chef-pedidos'}><h2>Cocinero</h2></Link>
             </button>
            
             </div>
