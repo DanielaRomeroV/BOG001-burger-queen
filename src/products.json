@@ -1,86 +1,88 @@
 [
   {
-    "menuName": "Breakfast",
-    "menuId": "breakfast",
-    "menuOptions": [
-      {
-        "id": "bm1",
-        "name": "American coffee",
-        "price": 5,
-        "icon": "coffee"
+    "nameMenu": "Desayuno",
+      "id": "breakfast",
+     "menuOptions": [
+       {
+          "id": "meal_1",
+          "name": "cafe americano",
+          "price": 5,
+          "icon": "img/icons/cafe.png"
+        },
+        {
+          "id": "meal_2",
+          "name": "cafe con leche",
+          "price": 7,
+          "icon": "img/icons/cafe.png"
+        },
+        {
+          "id": "meal_3",
+          "name": "Sandwich de queso",
+          "price": 10,
+          "icon": "img/icons/sandwich.png"
+        },
+
+        {
+          "id": "meal_4",
+           "name":"Jugo de frutas",
+           "price": 7,
+           "icon": "img/icons/jugo.png"
+          }
+        ]
       },
       {
-        "id": "bm2",
-        "name": "Milk coffee",
-        "price": 7,
-        "icon": "coffee"
-      },
-      {
-        "id": "bm3",
-        "name": "Ham and Cheese Sandwich",
+       "nameMenu": "Almuerzo",
+       "id": "lunch",
+       "menuOptions":[
+         {
+           "id": "lunch_1",
+           "name" : "Hamburguesa sencilla",
+           "price" : 10,
+           "icon" : "img/icons/hamburguesa.png"
+         },
+         {
+          "id":"lunch_2",
+          "name" : "Hamburguesa doble",
+          "price": "10",
+          "icon":"img/icons/hamburguesa.png"
+         },
+         { "id":"lunch_3",
+          "name":"Papas fritas",
+          "price": 5,
+          "icon":"img/icons/papas.png"
+         },
+         {
+         "id": "lunch_4",
+         "name": "Aros de cebolla",
+         "price": 5,
+         "icon": "img/icons/aros.png"
+       },
+       {
+         "id": "lunch_5",
+         "name": "Agua de 500ml",
+         "price": 5 ,
+         "icon":"img/icons/agua.png"
+
+       },
+       {
+        "id": "lunch_6",
+        "name":"Agua de 750ml",
+        "price": 7 ,
+        "icon":"img/icons/agua.png"
+
+      },  {
+        "id": "lunch_7",
+        "name":"Bebida de 500ml",
+        "price": 5 ,
+        "icon": "img/icons/gaseosa.png"
+
+      }, 
+       {
+        "id": "lunch_8",
+        "name":"Bebida de 750ml",
         "price": 10,
-        "icon": "sandwich"
-      },
-      {
-        "id": "bm4",
-        "name": "Natural Juice fruit",
-        "price": 7,
-        "icon": "juice"
+        "icon":"img/icons/gaseosa.png"
+      }
+       ]
       }
     ]
-  },
-  {
-    "menuName": "Lunch / Dinner",
-    "menuId": "lunch",
-    "menuOptions": [
-      {
-        "id": "lm1",
-        "name": "Cheese Burger",
-        "price": 10,
-        "icon": "burger"
-      },
-      {
-        "id": "lm2",
-        "name": "Double cheese burger",
-        "price": 10,
-        "icon": "burger"
-      },
-      {
-        "id": "lm3",
-        "name": "Fries",
-        "price": 5,
-        "icon": "fries"
-      },
-      {
-        "id": "lm4",
-        "name": "Onion rings",
-        "price": 5,
-        "icon": "onions"
-      },
-      {
-        "id": "lm5",
-        "name": "Water 500ml",
-        "price": 5,
-        "icon": "water"
-      },
-      {
-        "id": "lm6",
-        "name": "Water 750ml",
-        "price": 7,
-        "icon": "water"
-      },
-      {
-        "id": "lm7",
-        "name": "Soda 500ml",
-        "price": 5,
-        "icon": "soda"
-      },
-      {
-        "id": "lm8",
-        "name": "Soda 750ml",
-        "price": 10,
-        "icon": "soda"
-      }
-    ]
-  }
-]
