@@ -7,7 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from '../views/Home';
 import Waiter from '../views/waiter';
 import Chef from '../views/chef'
-import notFound from './notFound'
+import notFound from '../components/notFound'
 
 
 
