@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
-//import {waiterMenu} from '../components/waiterMenu';
 
 const StyledButton = styled.button`  //constante para style component 
 
