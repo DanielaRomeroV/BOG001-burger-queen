@@ -1,157 +1,86 @@
-{
-    "Café Americano": {
-      "id": "cafe_americano",
-      "name": "Café Americano",
-      "price": 5,
-      "img": "",
-      "menu": [
-        "breakfast"
-      ],
-      "type": [
-        "Bebida"
-      ]
-    },
-    "Café con Leche": {
-      "id": "cafe_con_leche",
-      "name": "Café con leche",
-      "price": 5,
-      "img": "",
-      "menu": [
-        "breakfast"
-      ],
-      "type": [
-        "Bebida"
-      ]
-    },
-    "Sandwich de jamón y queso": {
-      "id": "sandwich_de_jamon_y_queso",
-      "name": "Sandwich de jamón y queso",
-      "price": 5,
-      "img": "",
-      "menu": [
-        "breakfast"
-      ],
-      "type": [
-        "Comida"
-      ]
-    },
-    "Jugo de frutas natural": {
-      "id": "jugo_de_frutas_natural",
-      "name": "Jugo de frutas natural",
-      "price": 5,
-      "img": "",
-      "menu": [
-        "breakfast"
-      ],
-      "type": [
-        "Bebida"
-      ]
-    },
-    "Hamburguesa simple": {
-      "id": "hamburguesa_simple",
-      "name": "Hamburguesa simple",
-      "price": 10,
-      "img": "",
-      "menu": [
-        "lunch"
-      ],
-      "type": [
-        "Comida"
-      ],
-      "class": [
-        "res",
-        "pollo",
-        "vegetariana"
-      ]
-    },
-    "Hamburguesa doble": {
-      "id": "hamburguesa_doble",
-      "name": "Hamburguesa doble",
-      "price": 15,
-      "img": "",
-      "menu": [
-        "lunch"
-      ],
-      "type": [
-        "Comida"
-      ],
-      "class": [
-        "res",
-        "pollo",
-        "vegetariana"
-      ]
-    },
-    "Papas fritas": {
-      "id": "papas_fritas",
-      "name": "Papas fritas",
-      "price": 5,
-      "img": "",
-      "menu": [
-        "lunch"
-      ],
-      "type": [
-        "Complemento"
-      ]
-    },
-    "Aros de cebolla": {
-      "id": "aros_de_cebolla",
-      "name": "Aros de Cebolla",
-      "price": 5,
-      "img": "",
-      "menu": [
-        "lunch"
-      ],
-      "type": [
-        "Complemento"
-      ]
-    },
-    "Agua 500 ml": {
-      "id": "agua_500ml",
-      "name": "Agua 500ml",
-      "price": 5,
-      "img": "",
-      "menu": [
-        "lunch"
-      ],
-      "type": [
-        "Bebida"
-      ]
-    },
-    "Agua 750 ml": {
-      "id": "agua_750ml",
-      "name": "Agua 750ml",
-      "price": 7,
-      "img": "",
-      "menu": [
-        "lunch"
-      ],
-      "type": [
-        "Bebida"
-      ]
-    },
-    "Gaseosa 500ml": {
-      "id": "gaseosa_500ml",
-      "name": "Gaseosa 500ml",
-      "price": 7,
-      "img": "",
-      "menu": [
-        "lunch"
-      ],
-      "type": [
-        "Bebida"
-      ]
-    },
-    "Gaseosa 750 ml": {
-      "id": "gaseosa_750ml",
-      "name": "Gaseosa 750ml",
-      "price": 7,
-      "img": "",
-      "menu": [
-        "lunch"
-      ],
-      "type": [
-        "Bebida"
-      ]
-    }
+[
+  {
+    "menuName": "Breakfast",
+    "menuId": "breakfast",
+    "menuOptions": [
+      {
+        "id": "bm1",
+        "name": "American coffee",
+        "price": 5,
+        "icon": "coffee"
+      },
+      {
+        "id": "bm2",
+        "name": "Milk coffee",
+        "price": 7,
+        "icon": "coffee"
+      },
+      {
+        "id": "bm3",
+        "name": "Ham and Cheese Sandwich",
+        "price": 10,
+        "icon": "sandwich"
+      },
+      {
+        "id": "bm4",
+        "name": "Natural Juice fruit",
+        "price": 7,
+        "icon": "juice"
+      }
+    ]
+  },
+  {
+    "menuName": "Lunch / Dinner",
+    "menuId": "lunch",
+    "menuOptions": [
+      {
+        "id": "lm1",
+        "name": "Cheese Burger",
+        "price": 10,
+        "icon": "burger"
+      },
+      {
+        "id": "lm2",
+        "name": "Double cheese burger",
+        "price": 10,
+        "icon": "burger"
+      },
+      {
+        "id": "lm3",
+        "name": "Fries",
+        "price": 5,
+        "icon": "fries"
+      },
+      {
+        "id": "lm4",
+        "name": "Onion rings",
+        "price": 5,
+        "icon": "onions"
+      },
+      {
+        "id": "lm5",
+        "name": "Water 500ml",
+        "price": 5,
+        "icon": "water"
+      },
+      {
+        "id": "lm6",
+        "name": "Water 750ml",
+        "price": 7,
+        "icon": "water"
+      },
+      {
+        "id": "lm7",
+        "name": "Soda 500ml",
+        "price": 5,
+        "icon": "soda"
+      },
+      {
+        "id": "lm8",
+        "name": "Soda 750ml",
+        "price": 10,
+        "icon": "soda"
+      }
+    ]
   }
-  
+]

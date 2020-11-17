@@ -17,27 +17,25 @@ font-family: system-ui;
 }
 `
 
+const Waiter = () => {
+
+  return (
+    <div className="waiter-view">
+
+      <header className="nav-bar">
+        <img src={logo} alt="logo" /></header>
+      <Order></Order>
+
+      <button className='OptionMenu'>
+        <StyledButton> Desayuno </StyledButton>
+
+        <StyledButton> Almuerzo </StyledButton>
+      </button>
+
+    </div>
 
 
-const Waiter = () => { 
-
-    return (
-      <div className="waiter-view">      
-         
-         <header className="nav-bar">
-          <img src={logo} alt="logo"/></header>
-          <Order></Order>
-
-          <button className='OptionMenu'> 
-    <StyledButton> Desayuno </StyledButton> 
-
-    <StyledButton> Almuerzo </StyledButton>
-    </button> 
-
-          </div>
-        
-          
-    )
+  )
 }
 
 export default Waiter;
