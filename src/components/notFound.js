@@ -2,8 +2,6 @@ import React from "react";
 import icon from '../img/icon.png';
 
 
-
-
 function notFound() {
     return (
        

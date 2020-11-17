@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { component } from 'react';
 import Router from './components/Router';
+import waiter from './views/waiter';
 
-
-class App extends Component {
-  render() {
+function App () {
+  
     return (
       <Router />
     );
 
-  }
+  
 }
 
 export default App;
