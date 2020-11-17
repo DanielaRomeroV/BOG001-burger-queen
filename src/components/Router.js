@@ -15,8 +15,8 @@ const Router = () => {
     return (
 <Switch>
     <Route exact path='/' component={Home}/>
-    <Route exact path='/waiter' component={Waiter}/>
-    <Route exact path='/chef' component={Chef}/>
+    <Route exact path='/orden-mesero' component={Waiter}/>
+    <Route exact path='/chef-pedidos' component={Chef}/>
     <Route component={notFound} />
 
 </Switch>
