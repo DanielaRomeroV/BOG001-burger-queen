@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import logo from '../img/logo2.png';
 import Order from '../components/Order';
+import MenuItems from '../components/Items'
 
 const StyledButton = styled.button`  //constante para style component 
                                      // se accede a los estilos a traves de la etiqueta descrita en el template.
@@ -31,6 +32,7 @@ const Waiter = () => {
 
         <StyledButton> Almuerzo </StyledButton>
       </button>
+      <MenuItems />
 
     </div>
 
