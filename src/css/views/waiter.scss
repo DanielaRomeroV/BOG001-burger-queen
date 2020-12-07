@@ -1,15 +1,14 @@
 .waiter-view {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
-    align-items: center;
-    justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-bar {
-    background-color: #ddd;
-    display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
@@ -17,16 +16,18 @@
   height: 100px;
 }
 
-.nav-bar img{
-  width: 80px;
-  height: auto;
-  margin-left: 600px;
-  margin-top: 10px;
-    
+.OptionMenu {
+  margin-top: -550px;
+  margin-left: -250px;
 }
 
-.OptionMenu {
-  margin-top: -400px;
-  margin-left: -700px;
+.menu {
+  margin-top: -30px;
+  margin-left: 20px;
+}
 
+@media (min-width: 1281px) {
+  .OptionMenu {
+    margin-left: -500px;
+  }
 }

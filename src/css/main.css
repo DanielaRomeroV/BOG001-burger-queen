@@ -15,6 +15,7 @@ body {
 /*Views*/
 @import 'views/home.scss';
 @import 'views/waiter.scss';
+@import 'views/chef.scss';
 
 /*Components*/
 @import 'components/notFound.scss';

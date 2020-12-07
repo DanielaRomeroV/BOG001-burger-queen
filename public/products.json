@@ -1,87 +1,87 @@
 [
   {
     "nameMenu": "Desayuno",
-      "id": "breakfast",
+      "menuId": "breakfast",
      "menuOptions": [
        {
           "id": "meal_1",
-          "name": "cafe americano",
+          "name": "Cafe americano",
           "price": 5,
-          "icon": "img/icons/cafe.png"
+          "icon": "icons/cafe.png"
         },
         {
           "id": "meal_2",
           "name": "cafe con leche",
           "price": 7,
-          "icon": "img/icons/cafe.png"
+          "icon": "icons/cafe.png"
         },
         {
           "id": "meal_3",
           "name": "Sandwich de queso",
           "price": 10,
-          "icon": "img/icons/sandwich.png"
+          "icon": "icons/sandwich.png"
         },
 
         {
           "id": "meal_4",
            "name":"Jugo de frutas",
            "price": 7,
-           "icon": "img/icons/jugo.png"
+           "icon": "icons/jugo.png"
           }
         ]
       },
       {
        "nameMenu": "Almuerzo",
-       "id": "lunch",
+       "menuId": "lunch",
        "menuOptions":[
          {
            "id": "lunch_1",
            "name" : "Hamburguesa sencilla",
            "price" : 10,
-           "icon" : "img/icons/hamburguesa.png"
+           "icon" : "icons/hamburguesa.png"
          },
          {
           "id":"lunch_2",
           "name" : "Hamburguesa doble",
           "price": "10",
-          "icon":"img/icons/hamburguesa.png"
+          "icon":"icons/hamburguesa.png"
          },
          { "id":"lunch_3",
           "name":"Papas fritas",
           "price": 5,
-          "icon":"img/icons/papas.png"
+          "icon":"icons/papas.png"
          },
          {
          "id": "lunch_4",
          "name": "Aros de cebolla",
          "price": 5,
-         "icon": "img/icons/aros.png"
+         "icon": "icons/aros.png"
        },
        {
          "id": "lunch_5",
          "name": "Agua de 500ml",
          "price": 5 ,
-         "icon":"img/icons/agua.png"
+         "icon":"icons/agua.png"
 
        },
        {
         "id": "lunch_6",
         "name":"Agua de 750ml",
         "price": 7 ,
-        "icon":"img/icons/agua.png"
+        "icon":"icons/agua.png"
 
       },  {
         "id": "lunch_7",
         "name":"Bebida de 500ml",
         "price": 5 ,
-        "icon": "img/icons/gaseosa.png"
+        "icon": "icons/gaseosa.png"
 
       }, 
        {
         "id": "lunch_8",
         "name":"Bebida de 750ml",
         "price": 10,
-        "icon":"img/icons/gaseosa.png"
+        "icon":"icons/gaseosa.png"
       }
        ]
       }
