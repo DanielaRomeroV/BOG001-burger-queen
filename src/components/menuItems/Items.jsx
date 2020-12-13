@@ -1,20 +1,24 @@
 import React from "react";
 import "./Items.css";
-
+import otrMenu from "./products.json";
 import Button from "@material-ui/core/Button";
 
-const menus = "lunch";
-
 function MenuItems() {
-  const [products, setProducts] = React.useState([]);
-  React.useEffect(() => {
-    obtenerDatos(menus);
-  }, []);
+  const [products, setProducts] = React.useState(otrMenu[0].menuOptions);
 
-  const obtenerDatos = async (menus) => {
+  const obtenerDesayuno = async () => {
     const datos = await fetch("products.json");
     const menu = await datos.json();
-    const obtenerMenu = menu.find(({ menuId }) => menus === menuId);
+    const obtenerMenu = menu.find(({ menuId }) => "breakfast" === menuId);
+    console.log(obtenerMenu);
+    console.log(obtenerMenu.menuOptions);
+    setProducts(obtenerMenu.menuOptions);
+  };
+
+  const obtenerAlmuerzo = async () => {
+    const datos = await fetch("products.json");
+    const menu = await datos.json();
+    const obtenerMenu = menu.find(({ menuId }) => "lunch" === menuId);
     console.log(obtenerMenu);
     console.log(obtenerMenu.menuOptions);
     setProducts(obtenerMenu.menuOptions);
@@ -23,18 +27,20 @@ function MenuItems() {
   return (
     <div className="menuPage">
       <div className="button">
-        <Button color="primary" variant="contained">
+        <Button color="primary" variant="contained" onClick={obtenerDesayuno}>
           Desayuno
         </Button>
 
         <Button
           style={{ marginLeft: "10px" }}
           color="primary"
-          variant="contained">
+          variant="contained"
+          onClick={obtenerAlmuerzo}
+        >
           Almuerzo
         </Button>
       </div>
-      
+
       <section className="cards">
         {products.map(({ id, name, price, icon }) => (
           <div className="au-card">
