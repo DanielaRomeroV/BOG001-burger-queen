@@ -8,6 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;  
   font-size: 16px;
+  background-color: #f8ecdf;
 }
 
 
@@ -19,4 +20,3 @@ body {
 
 /*Components*/
 @import 'components/notFound.scss';
-@import 'components/Order.scss';

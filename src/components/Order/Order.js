@@ -1,11 +1,12 @@
 import React from 'react';
+import './Order.css'
 
 
 const Order = () => {
 
     return (
-        <section className="client-table">
-            <form className="content">           
+        <div className="client-table">
+            <div className="content">           
                 <label htmlFor="userName">
                     Cliente:
               </label>
@@ -21,7 +22,7 @@ const Order = () => {
                     <option value="10">4</option>
                     <option value="11">5</option>
                 </select>
-            </form>
+            </div>
 
 
 
@@ -49,7 +50,7 @@ const Order = () => {
                 </tbody>
             </table>
 
-        </section>
+        </div>
     )
 }
 

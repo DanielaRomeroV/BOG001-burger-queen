@@ -4,11 +4,6 @@ import React from 'react';
 import Order from '../components/Order/Order';
 import MenuItems from '../components/menuItems/Items.jsx';
 import NavBar from "../components/Menu/Menu";
-import Buttons from "../components/Button/Buttons.jsx"
-
-  
-
-
 
 const Waiter = () => {
 
@@ -19,27 +14,18 @@ const Waiter = () => {
          <NavBar></NavBar>
         </header>
 
-      <Order></Order>
+   
       
       <div className='OptionMenu'>
-      <Buttons> Desayuno </Buttons>  
-      <MenuItems 
-      //  key={id}
-      //  name={name}
-      //  price={price}
-      //  icon={icon}
-      // orderId={id}
-      />
+      <MenuItems/>
       </div>
 
-     
-
-
-      
-     
-   
+      <div className="order">
+      <Order></Order> </div>
 
     </div>
+
+
 
 
   )
