@@ -30,6 +30,8 @@
           }
         ]
       },
+
+    
       {
        "nameMenu": "Almuerzo",
        "id": "lunch",
@@ -43,7 +45,7 @@
          {
           "id":"lunch_2",
           "name" : "Hamburguesa doble",
-          "price": "10",
+          "price": 15,
           "icon":""
          },
          { "id":"lunch_3",
@@ -61,7 +63,7 @@
          "id": "lunch_5",
          "name": "Agua de 500ml",
          "price": 5 ,
-         "icon":"" ,
+         "icon":"" 
 
        },
        {
@@ -70,7 +72,8 @@
         "price": 7 ,
         "icon":""
 
-      },  {
+      },
+      {
         "id": "lunch_7",
         "name":"Bebida de 500ml",
         "price": 5 ,
