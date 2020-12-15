@@ -1,5 +1,6 @@
 import React from 'react';
 import './Order.css'
+import Button from "@material-ui/core/Button";
 
 
 const Order = () => {
@@ -49,6 +50,12 @@ const Order = () => {
                 <tbody>
                 </tbody>
             </table>
+
+            <div className="buttonOrder">
+        <Button color="primary" variant="contained">
+        Crear orden
+        </Button> </div>
+
 
         </div>
     )

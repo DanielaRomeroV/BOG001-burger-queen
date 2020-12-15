@@ -10,17 +10,13 @@ function MenuItems() {
     const datos = await fetch("products.json");
     const menu = await datos.json();
     const obtenerMenu = menu.find(({ menuId }) => "breakfast" === menuId);
-    console.log(obtenerMenu);
-    console.log(obtenerMenu.menuOptions);
-    setProducts(obtenerMenu.menuOptions);
+   setProducts(obtenerMenu.menuOptions);
   };
 
   const obtenerAlmuerzo = async () => {
     const datos = await fetch("products.json");
     const menu = await datos.json();
     const obtenerMenu = menu.find(({ menuId }) => "lunch" === menuId);
-    console.log(obtenerMenu);
-    console.log(obtenerMenu.menuOptions);
     setProducts(obtenerMenu.menuOptions);
   };
 
