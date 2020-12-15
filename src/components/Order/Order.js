@@ -52,7 +52,7 @@ const Order = () => {
             </table>
 
             <div className="buttonOrder">
-        <Button color="primary" variant="contained">
+        <Button color="primary" variant="contained" a href="/chef-pedidos">
         Crear orden
         </Button> </div>
 

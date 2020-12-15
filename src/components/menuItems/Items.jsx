@@ -1,10 +1,10 @@
 import React from "react";
 import "./Items.css";
-import otrMenu from "./products.json";
+import menuProducts from "./products.json";
 import Button from "@material-ui/core/Button";
 
 function MenuItems() {
-  const [products, setProducts] = React.useState(otrMenu[0].menuOptions);
+  const [products, setProducts] = React.useState(menuProducts[0].menuOptions);
 
   const obtenerDesayuno = async () => {
     const datos = await fetch("products.json");

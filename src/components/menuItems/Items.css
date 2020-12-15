@@ -5,7 +5,7 @@
 }
 .cards {
     display: flex;
-    margin-left:20px;
+    margin-left: -20px;
     flex-wrap: wrap;
     width: 521px;
     height: 518px;    
