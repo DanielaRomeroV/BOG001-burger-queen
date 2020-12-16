@@ -1,9 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Order.css'
 import Button from "@material-ui/core/Button";
 
+//Components
+//import menuItems from '../menuItems/Items.jsx';
+
+const preOrden = [null,null];
+
 
 const Order = () => {
+
+    const [orden, setOrden] = useState(preOrden);
+   
+    const imprimirOrden = ()=>{
+        //console.log(ReactDOM.render(menuItems, document.getElementById('meal_1')));
+        const ordenaMostrar = ['queso', 4.3];
+        setOrden(ordenaMostrar);
+    }
 
     return (
         <div className="client-table">
@@ -36,17 +49,8 @@ const Order = () => {
                     </tr>
                 </thead>
                 <tr>
-                    <td>Agua</td><td>2</td><td>$ 4.5</td>
+                    <td>{orden[0]}</td><td>1</td><td>$ {orden[1]}</td>
                 </tr>
-
-                <tr>
-                    <td>Agua</td><td>2</td><td>$ 4.5</td>
-                </tr>
-
-                <tr>
-                    <td>Agua</td><td>2</td><td>$ 4.5</td>
-                </tr>
-
                 <tbody>
                 </tbody>
             </table>
@@ -54,6 +58,10 @@ const Order = () => {
             <div className="buttonOrder">
         <Button color="primary" variant="contained" a href="/chef-pedidos">
         Crear orden
+        </Button> </div>
+        <div className="bottonEstado">
+        <Button color="primary" variant="contained" onClick={imprimirOrden}>
+        cambiar estado
         </Button> </div>
 
 

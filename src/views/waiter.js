@@ -7,14 +7,14 @@ import NavBar from "../components/Menu/Menu";
 
 const Waiter = () => {
 
+  
+
   return (
     <div className="waiter-view">
 
       <header className="nav-bar">
          <NavBar></NavBar>
         </header>
-
-   
       
       <div className='OptionMenu'>
       <MenuItems/>
@@ -24,9 +24,6 @@ const Waiter = () => {
       <Order></Order> </div>
 
     </div>
-
-
-
 
   )
 }

@@ -29,9 +29,9 @@ const Chef = () => {
         {/* {products.map(({ id, name, price, icon }) => ( */}
         <div className="au-cardOrder">
           <div className="au-card-inner">
-          <h1 className="title">Name</h1>
-            <h1 className="title">Table</h1>
-            <h1 className="title">Products</h1>
+          <h1 className="title">Nombre</h1>
+            <h1 className="title">Mesa</h1>
+            <h1 className="title">Productos</h1>
           </div>
           <div className="buttonSend">
           <Button color="primary" variant="outlined">

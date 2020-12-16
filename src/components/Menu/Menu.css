@@ -107,7 +107,7 @@ body {
 .burger-menu .menu-check:checked ~ .menu-options {
   width: 15%;
   opacity: 1;
-  height: 100vh;
+  height: 120vh;
 }
 
 .nav-bar img {
