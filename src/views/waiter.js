@@ -21,44 +21,26 @@ font-family: system-ui;
 //useEffect detecta los eventos esa es la magia de react by: bolo
 
 const Waiter = ({ }) => {
-  const [click, setClick] = useState( false );  //
+ // const [click, setClick] = useState( false );  
   const [show, setShow] = useState([]);  
+  const [tipoMenu , setTipoMenu] = useState('breakfast');
 
-  const listenclick= (e) => { 
-    if ( e.target.id == "true" ) {
-       
-        getMenu('breakfast')
-        setClick(false);
-        }
-    else {
-      setClick(true)
-      getMenu('Lunch')
+
+   useEffect(() => {
+    const traermenu = async () => { 
+      await db.collection(tipoMenu)
+      .onSnapshot((querySnapshot) => {
+        const elementos = []
+        querySnapshot.forEach(element => {
+        elementos.push({id:element.id , ...element.data()})
+        });
+        console.log(elementos)
+        setShow(elementos)
+      })
     }
-   
-  };
-
-  const getMenu = async (coleccion) => {
-    if(coleccion == undefined ){
-      coleccion = 'breakfast'
-    }
-    await db.collection(coleccion)
-    .onSnapshot((querySnapshot) => {
-      const elementos = []
-      querySnapshot.forEach(element => {
-      //console.log(element.data())
-      elementos.push({id:element.id , ...element.data()})
-      });
-      console.log(elementos)
-      setShow(elementos)
-    })
-  }
-
+traermenu()
   
-
-  useEffect(() => {
-    console.log("useEffect")
-    getMenu("breakfast")
-  }, [])
+  }, [tipoMenu] )
   
     return (
     <div className="waiter-view">
@@ -69,38 +51,24 @@ const Waiter = ({ }) => {
 
       <button className='OptionMenu'>
         <StyledButton 
-        id={'true'}  
-        //active={true}
-        onClick= {listenclick}> Desayuno </StyledButton>
+        onClick= { ()=> setTipoMenu('breakfast')}> Desayuno </StyledButton>
+
       <StyledButton
-        id={'false'}
-        onClick= {listenclick} >
+     onClick= {()=> setTipoMenu ('Lunch') }>
            Almuerzo </StyledButton>
       </button>
       <div>
       <span>
-          {click ? (
-            <div /* Este es el div 1 */ className="red2" >
-      
-             {show.map((item)  => {
-               // console.log(item , 'jjj')
-               return <div> {item.name }  {item.price}
-              <BttnAgregar item = {item} ></BttnAgregar>
-              </div>}
-
-              )  }
-            </div>
-          ) : (
-            console.log(show),
-          <div /* Este es el div 2 */ className="redd" >
+          
+          <div className="redd" >
       
             {show.map((item)  => {
               return <div>{item.name} {item.price}
             <BttnAgregar item = {item} />
              </div>   } 
-           )  }
+            )  }
           </div>
-          )}
+  
         </span>  
         </div>
     </div>

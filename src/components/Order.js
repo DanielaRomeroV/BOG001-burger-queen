@@ -34,15 +34,15 @@ const Order = () => {
                     </tr>
                 </thead>
                 <tr>
-                    <td>Agua</td><td>2</td><td>$ 4.5</td>
+                    <td> item </td><td>2</td><td>$ 4.5</td>
                 </tr>
 
                 <tr>
-                    <td>Agua</td><td>2</td><td>$ 4.5</td>
+                    <td>item</td><td>2</td><td>$ 4.5</td>
                 </tr>
 
                 <tr>
-                    <td>Agua</td><td>2</td><td>$ 4.5</td>
+                    <td>item</td><td>2</td><td>$ 4.5</td>
                 </tr>
 
                 <tbody>
