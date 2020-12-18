@@ -24,7 +24,7 @@ const Waiter = ({ }) => {
  // const [click, setClick] = useState( false );  
   const [show, setShow] = useState([]);  
   const [tipoMenu , setTipoMenu] = useState('breakfast');
-
+const [Compartido , setCompartido] = useState({})
 
    useEffect(() => {
     const traermenu = async () => { 
@@ -44,32 +44,26 @@ traermenu()
   
     return (
     <div className="waiter-view">
-
       <header className="nav-bar" >
         <img src={logo} alt="logo" /></header>
       <Order></Order>
-
       <button className='OptionMenu'>
         <StyledButton 
         onClick= { ()=> setTipoMenu('breakfast')}> Desayuno </StyledButton>
-
-      <StyledButton
-     onClick= {()=> setTipoMenu ('Lunch') }>
+        <StyledButton
+         onClick= {()=> setTipoMenu ('Lunch') }>
            Almuerzo </StyledButton>
       </button>
       <div>
-      <span>
-          
-          <div className="redd" >
-      
-            {show.map((item)  => {
-              return <div>{item.name} {item.price}
-            <BttnAgregar item = {item} />
-             </div>   } 
-            )  }
-          </div>
-  
-        </span>  
+        <span>
+            <div className="redd" >
+              {show.map((item)  => {
+                return <div>{item.name} {item.price}
+              <BttnAgregar item = {item} />
+              </div>   } 
+              )  }
+            </div>
+          </span>  
         </div>
     </div>
 
