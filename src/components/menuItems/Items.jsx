@@ -9,7 +9,7 @@ const paraOrden = (nombreProd, precioProd) => {
   return miniOrden;
 };
 
-function MenuItems() {
+function MenuItems(props) {
   const [products, setProducts] = React.useState(menuProducts[0].menuOptions);
 
   const obtenerDesayuno = async () => {
@@ -28,6 +28,11 @@ function MenuItems() {
 
   return (
     <div className="menuPage">
+      <p>{props.prueba}</p>
+      <Button color="primary" variant="contained" onClick={() => props.actualizarEstado("valor")}>
+        cambiar 
+        </Button>
+        
       <div className="button">
         <Button color="primary" variant="contained" onClick={obtenerDesayuno}>
           Desayuno

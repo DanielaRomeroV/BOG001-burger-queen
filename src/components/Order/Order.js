@@ -8,7 +8,7 @@ import Button from "@material-ui/core/Button";
 const preOrden = [null,null];
 
 
-const Order = () => {
+const Order = (props) => {
 
     const [orden, setOrden] = useState(preOrden);
    
@@ -20,6 +20,8 @@ const Order = () => {
 
     return (
         <div className="client-table">
+            <p>{props.prueba2}</p>
+
             <div className="content">           
                 <label htmlFor="userName">
                     Cliente:
