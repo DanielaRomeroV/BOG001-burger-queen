@@ -21,10 +21,10 @@ font-family: system-ui;
 //useEffect detecta los eventos esa es la magia de react by: bolo
 
 const Waiter = ({ }) => {
- // const [click, setClick] = useState( false );  
+
   const [show, setShow] = useState([]);  
   const [tipoMenu , setTipoMenu] = useState('breakfast');
-const [Compartido , setCompartido] = useState({})
+  const [order , setOrder] = useState({}) 
 
    useEffect(() => {
     const traermenu = async () => { 
@@ -38,7 +38,7 @@ const [Compartido , setCompartido] = useState({})
         setShow(elementos)
       })
     }
-traermenu()
+traermenu() //activa la funcion, la ejecuta
   
   }, [tipoMenu] )
   
@@ -47,19 +47,24 @@ traermenu()
       <header className="nav-bar" >
         <img src={logo} alt="logo" /></header>
       <Order></Order>
+
       <button className='OptionMenu'>
         <StyledButton 
         onClick= { ()=> setTipoMenu('breakfast')}> Desayuno </StyledButton>
         <StyledButton
-         onClick= {()=> setTipoMenu ('Lunch') }>
-           Almuerzo </StyledButton>
+         onClick= {()=> setTipoMenu ('Lunch') }> Almuerzo </StyledButton>
       </button>
+
       <div>
         <span>
             <div className="redd" >
               {show.map((item)  => {
                 return <div>{item.name} {item.price}
-              <BttnAgregar item = {item} />
+              <BttnAgregar item = {item}
+               setOrder = {setOrder } > //props para bttn agregar
+              
+              </BttnAgregar>
+
               </div>   } 
               )  }
             </div>
