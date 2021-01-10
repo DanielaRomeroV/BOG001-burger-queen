@@ -1,74 +1,62 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Order.css'
 import Button from "@material-ui/core/Button";
 
-//Components
-//import menuItems from '../menuItems/Items.jsx';
 
-const preOrden = [null,null];
+export default function Order({ order, setOrder, setClientName, total, setTotal }) {
 
 
-const Order = (props) => {
-
-    const [orden, setOrden] = useState(preOrden);
-   
-    const imprimirOrden = ()=>{
-        //console.log(ReactDOM.render(menuItems, document.getElementById('meal_1')));
-        const ordenaMostrar = ['queso', 4.3];
-        setOrden(ordenaMostrar);
-    }
 
     return (
         <div className="client-table">
-            <p>{props.prueba2}</p>
-
-            <div className="content">           
+            <div className="content">
                 <label htmlFor="userName">
                     Cliente:
               </label>
-                <input type="name" name="user-name" className="name-input" />
-
-                <label htmlFor="table-number"  className="table-number">
-                    Mesa:
-            </label>
-                <select name="mesa">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="10">4</option>
-                    <option value="11">5</option>
-                </select>
+                <input type="text" name="user-name" className="name-input" onBlur={(e) => setClientName(e.target.value)} required />
             </div>
-
-
-
             <table className="table">
-                <thead>
+                <thead className="title-table">
                     <tr>
                         <th><h3>Productos</h3></th>
-                        <th><h3>Cant</h3></th>
+                        <th><h3>Cantidad</h3></th>
                         <th><h3>Precio</h3></th>
                     </tr>
                 </thead>
                 <tr>
-                    <td>{orden[0]}</td><td>1</td><td>$ {orden[1]}</td>
+                    {order.map(({ name, quantity, price, total}, index) => (
+                        <tr className="tr-content">
+                            <td className='name-in-table'>{name}</td>
+                            <td className='idx-in-table'>{index}</td>
+                            <td className='quantity-in-table'>
+                                <button className='sumButton'>
+                                    +
+                                </button>
+                                {quantity}
+                                <button className='minusButton'>
+                                    -
+                                </button></td>
+                            <td className='price-in-table'>${price}
+                                <button className='erraseButton' onClick={() => setOrder(order.filter((_,ind) => ind !==index))}>
+                                <i class="fas fa-trash" aria-hidden="true"></i>
+                                   
+                                </button>
+                            </td>
+                        </tr>
+                    ))}
                 </tr>
                 <tbody>
                 </tbody>
+                <tfoot className="total">
+                    <h3>
+                        Total
+                    </h3>
+                </tfoot>
             </table>
-
-            <div className="buttonOrder">
-        <Button color="primary" variant="contained" a href="/chef-pedidos">
-        Crear orden
-        </Button> </div>
-        <div className="bottonEstado">
-        <Button color="primary" variant="contained" onClick={imprimirOrden}>
-        cambiar estado
-        </Button> </div>
+                        
+         
 
 
         </div>
     )
-}
-
-export default Order;
+};

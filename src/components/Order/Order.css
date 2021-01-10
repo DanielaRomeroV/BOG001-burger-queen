@@ -1,25 +1,33 @@
 .buttonOrder {
-    margin-top: 250px;
+    margin-top: 400px;
     margin-left: 70px;
 }
 .client-table {
     margin-top: 170px;
-    margin-left: 600px;    
-    width: 270px;
-    height: 440px;
+    width: 450px;
+    min-height: 400px;
     border: 5px solid #FF840B;
     border-radius: 10px; 
     background-color: white;
+    
 }
 .content {
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 100px;    
 }
 
 table {
     margin-top: 30px;
     margin-left: 20px;
-    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-table {
+    height: 100%;
+    text-align: center;
+    padding: 0 15px;
+    margin-left: 10px;
 }
 
 h3 {
@@ -32,16 +40,28 @@ th, td {
 }
 
 tr:nth-child(even) {
-    background-color: #ddd;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 10px;
+    height: 20px;
 }
 
-tr:hover td{
-    background-color: #FF840B;
-    color: white;
+.total {
+    margin-top: 200px;
+    margin-left: 40px;
 }
 
+.erraseButton {
+    margin-left: 70px;
+    color: #FF840B;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: transparent;
+    
+
+}
 @media (min-width: 1281px) {
-    .client-table {
-       margin-left: 700px; }
+    
 
   }
