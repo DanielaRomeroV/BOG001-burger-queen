@@ -5,30 +5,36 @@
 .client-table {
     margin-top: 170px;
     width: 450px;
-    min-height: 400px;
+    min-height: 500px;
     border: 5px solid #FF840B;
     border-radius: 10px; 
     background-color: white;
+    position: relative;
     
 }
 .content {
-    margin-top: 30px;
-    margin-left: 100px;    
+    margin-top: 10px;
+    margin-left: 80px;
+    width: 300px;
+    display: flex;
+    flex-direction: column; 
+      
 }
 
 table {
-    margin-top: 30px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 10px;
+    margin-top:20px;
+   
 }
 
 .title-table {
     height: 100%;
-    text-align: center;
-    padding: 0 15px;
-    margin-left: 10px;
+    margin-left: 20px;
+   
 }
+
 
 h3 {
     font-size: 20px;
@@ -46,13 +52,13 @@ tr:nth-child(even) {
     height: 20px;
 }
 
-.total {
-    margin-top: 200px;
-    margin-left: 40px;
+.total-price {
+    margin-top: 20px;
+    margin-left: 245px;
+    
 }
 
 .erraseButton {
-    margin-left: 70px;
     color: #FF840B;
     width: 30px;
     height: 30px;

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-//import Button from "@material-ui/core/Button";
+import React, { useState, useEffect } from 'react';
 
 //Components
 import Order from '../components/Order/Order';
 import MenuItems from '../components/menuItems/Items.js';
 import NavBar from "../components/Menu/Menu";
+import CreateOrder from "../components/CreateOrder/createOrder.js";
 
 export default function Waiter() {
 
@@ -21,6 +21,10 @@ export default function Waiter() {
     done: false,
     delivered: false
   }
+
+  useEffect(() => {
+    setTotal(order.reduce((fullTotal, {total})=> fullTotal + total, 0))
+  }, [order, setOrder])
 
   return (
     <div className="waiter-view">
@@ -44,11 +48,11 @@ export default function Waiter() {
           total={total}
           setTotal={setTotal}
         ></Order> </div>
-      <button  className="crear-orden"
-        value="dani"
-        onClick={(e) => alert(e.target.value)}>
-        CREAR ORDEN
-      </button>
+      <CreateOrder
+      clientOrder = {clientOrder}
+      setOrder = {setOrder}
+      setClientName = {setClientName}>
+      </CreateOrder>
     </div>
 
   )

@@ -1,6 +1,6 @@
 .order {
   margin-top: -670px;
-  margin-left: 600px;
+  margin-left: 700px;
 }
 
 .waiter-view {
@@ -31,18 +31,6 @@
   margin-left: 20px;
 }
 
-.crear-orden {
-  margin-left: 600px;
-  margin-top: 20px;
-  text-decoration: none;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 20px;
-  color: #ffffff;
-  background-color:  #ff840b;;
-  border-radius: 6px;
-  border: 2px;
-}
 
 
 @media (min-width: 1281px) {
@@ -52,6 +40,7 @@
 
   .order {
     margin-top: -670px;
+    margin-left: 600px;
    
   }
 }
