@@ -11,8 +11,7 @@ export default function Waiter() {
   const [order, setOrder] = useState([]);
   const [clientName, setClientName] = useState('');
   const [total, setTotal] = useState(0);
-  console.log('orden: '+order);
-  console.log('name: '+clientName);
+
 
   let clientOrder = {
     nameClient: clientName,
@@ -28,11 +27,9 @@ export default function Waiter() {
 
   return (
     <div className="waiter-view">
-
       <header className="nav-bar">
         <NavBar />
       </header>
-
       <div className='OptionMenu'>
         <MenuItems
           order={order}
@@ -46,8 +43,8 @@ export default function Waiter() {
           setOrder={setOrder}
           setClientName={setClientName}
           total={total}
-          setTotal={setTotal}
         ></Order> </div>
+          
       <CreateOrder
       clientOrder = {clientOrder}
       setOrder = {setOrder}

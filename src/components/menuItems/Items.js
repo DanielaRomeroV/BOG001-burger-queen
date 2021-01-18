@@ -3,12 +3,12 @@ import "./Items.css";
 import menuProducts from "./products.json";
 
 export default function MenuItems({ order, setOrder }) {
-  const [menuType, setMenuType] = useState("breakfast");
-  console.log(menuType);
-  const menus = menuProducts.find(({ menuId }) => menuType === menuId);
-  console.log(menus);
+
+  const [menuType, setMenuType] = useState("breakfast"); 
+  const menus = menuProducts.find(({ menuId }) => menuType === menuId); 
   const menu = menus.menuOptions;
-  console.log(menu);
+ 
+
   return (
     <div className="menuPage">
       <div className="page-buttons">
@@ -23,7 +23,7 @@ export default function MenuItems({ order, setOrder }) {
         <button
           className="menu-Lunch"
           value="lunch"
-          onClick={(e) => setMenuType(e.target.value)}
+          onClick={(e) => setMenuType(e.target.value)} 
         >
           Almuerzo
         </button>
@@ -31,8 +31,8 @@ export default function MenuItems({ order, setOrder }) {
 
       <div className="cards">
         {menu.map(({ id, name, price, icon }) => (
-          <div className="au-card" id={id} key={id + 'card'}>
-            <div className="au-card-inner" key={id + 'cards'}>
+          <div className="au-card">
+            <div className="au-card-inner">
               <h3 className="title-1">{name}</h3>
               <img src={icon} alt={id + "icon"} />
               <h3 className="title-2"> ${price}</h3>
