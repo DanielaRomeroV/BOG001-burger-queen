@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 //import { P2 } from './Styling';
 //import './Item.scss';
 import { AppContext } from '../AppContext';
-import Delete from '../assets/delete.svg';
+import eliminar from '../img/eliminar.png';
 
 export default function Item({ name, price, quantity, grid, id }) {
   const { deleteProduct } = useContext(AppContext);
@@ -20,9 +20,9 @@ export default function Item({ name, price, quantity, grid, id }) {
         {' '}
       </p>
       <img
-        src={Delete}
-        alt="delete"
-        className="bill-box-delete"
+        src={eliminar}
+        alt="eliminar"
+        className="iconDelete"
         onClick={handleDelete}
       />
     </div>
