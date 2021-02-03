@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { AppProvider } from './AppContext';
+
 import * as serviceWorker from './serviceWorker';
 
 import './firebase'
@@ -12,10 +14,14 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
+   
 <BrowserRouter>
-<App />
+<AppProvider> 
+    <App />
+</AppProvider>
 </BrowserRouter>,
- document.getElementById('root'));
+ document.getElementById('root'), 
+ ); 
 
 
 // If you want your app to work offline and load faster, you can change
