@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Londrina+Solid:wght@300&display=swap');
+
 
 *{
   margin:0px; 
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Londrina Solid', cursive;
   margin: 0;  
-  font-size: 26px;
+  font-size: 20px;
 }
-
-
 
 /*Views*/
 @import 'views/home.scss';

@@ -15,10 +15,11 @@ const agregarClick = () => {
         <div>
             <button
              className = 'Add'
-             text = 'Agregar'
+          
              onClick={props.onClick } 
              >  
-            Agregar
+             {props.text}
+        
             </button>
 
         </div>

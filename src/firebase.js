@@ -12,13 +12,17 @@
     appId: "1:702282847571:web:72704f4a6c9b4e2d41fda6",
     measurementId: "G-H0YW7W727V"
   };
+ 
   // Initialize Firebase
   const fb = firebase.initializeApp(firebaseConfig);
 
-export const db = fb.firestore()
+const db = fb.firestore()
 
 
-
+function addBill(data) {   //crea o agrega a la coleccion order el objeto que reciba por parametros, la orden que se envia a chef
+  db.collection('orders').add(data);
+}
+export { db, addBill, firebase };
 
 
 

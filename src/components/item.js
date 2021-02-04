@@ -12,19 +12,22 @@ export default function Item({ name, price, quantity, grid, id }) {
   };
 
   return (
+
     <div className={`bill-box ${grid}`}>
+
+<img
+        src={eliminar}
+        alt="eliminar"
+
+        onClick={handleDelete}
+      />
       <p className="bill-box-quantities">{quantity}</p>
       <p>{name}</p>
       <p className="bill-box-price">
         {`$${price}`}
         {' '}
       </p>
-      <img
-        src={eliminar}
-        alt="eliminar"
-        className="iconDelete"
-        onClick={handleDelete}
-      />
+     
     </div>
   );
 }

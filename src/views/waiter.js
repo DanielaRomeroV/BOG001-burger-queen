@@ -24,10 +24,8 @@ const Waiter = ({ }) => {
   const {addProduct} = useContext(AppContext)
   const [show, setShow] = useState([]);  
   const [tipoMenu , setTipoMenu] = useState('breakfast');
-  const [order , setOrder] = useState({}) 
 
   const handleClick = (name,price) => {
-    console.log('jhj', name)
     addProduct({  //array q se comparte
       //name: `${burger.name}  ${meat}  ${extras.join(' ')}`,
       name:name,
@@ -48,7 +46,7 @@ const Waiter = ({ }) => {
         querySnapshot.forEach(element => {   //iteramos sobre querySnap para representar los coleccionItems del array, cada array es resultado de collection
         coleccionItems.push( {id:element.id , ...element.data()} )
         });
-        console.log(coleccionItems)
+       // console.log(coleccionItems)
         setShow(coleccionItems)  //pinta los datos dependiedo de que haya dentro
       })
     } 
@@ -76,8 +74,9 @@ const Waiter = ({ }) => {
                 return <div>{item.name} {item.price}
                 <input></input>
               <BttnAgregar 
+              text = "agregar"
               onClick = {()=> handleClick(item.name, item.price)}>
-              </BttnAgregar>
+             </BttnAgregar>
 
               </div>   } 
               )  }

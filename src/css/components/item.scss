@@ -1,9 +1,10 @@
-.bill-box {
-   
+.bill-box  {
+ 
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: start;
-    height: 40px;
+    height: 50px;
+   
     align-items: center;
     border-top: 1px solid $zeta;
 }
@@ -11,8 +12,15 @@
 .bill-box-quantities, .bill-box-price{
     text-align: center;
 }
-.iconDelete{
-    margin: auto;
-    width: auto;
-    height: 20%;
+img {
+    margin:auto;
+    width: 55%;
+    height: 28%;
+}
+.bill-box:hover {
+    background-color: #FF840B;
+    color: white;
+}
+.bill-box:nth-child(even) {
+    background-color: #ddd;
 }
