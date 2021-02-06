@@ -36,11 +36,9 @@
   animation-duration: 2s; /* don't forget to set a duration! */
   }
 
-
-
 .Buttons {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 40px;
   padding-top: 60px;
 }
 
@@ -67,7 +65,7 @@ h2 {
 /* Tablet*/
 @media only screen and (min-height: 1250px) and (max-height: 3160px) {
   .Home {
-    height: 1100px;
+    height: 1900px;
     width: 5%;
   }
   .Buttons {

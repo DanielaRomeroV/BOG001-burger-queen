@@ -7,12 +7,10 @@ import BttnAgregar from './BttnAgregar';
 
 const Order = () => {
     const { bill, setBill} = useContext(AppContext);
-    const {client ,setClient} = useState ('');
     const total = bill.reduce((valorI, producto) => valorI + producto.price, 0)
     const products = bill.map((prod, i) => (
         <Item
-         // grid="box-grid"
-          //cName="bill-box"
+         grid="box-grid"
           key={prod.name + i}
           name={prod.name}
           price={prod.price}
@@ -20,52 +18,30 @@ const Order = () => {
           id={prod.id}
         />
       ));
-     // const handleClient = (e) => setClient(e.currentTarget.value);
-
       const handleSend = () => {
-        if (client !== '' && bill.length !== 0) {
+        if ( bill.length !== 0) {
           const addOrder = () => {
             const order = {
-              //client,
               products: bill,
               total: total,
               isDone: false,
               isDeliver: false,
               date: firebase.firestore.Timestamp.now(),
-              //idOrder,
+         
             };
             addBill(order);
             setBill([]);
-           // setClient('');
-            //setError('');
           }
-          alert('Seguro que quieres enviar la orden', 'warning', false, 'La orden ha sido enviada', addOrder())
-        } else if (client !== '' && bill.length === 0) {
+          addOrder()
+        } else if ( bill.length === 0) {
           alert(<p2 error>Añade productos</p2>);
-        } else {
-          alert(<p2 error> Escribe nombre del cliente </p2>);
         }
       }
     
 
     return (
         <section className="client-table">
-            <form className="content">           
-                <label htmlFor="userName">
-                    Cliente:
-               </label>
-                
-                <input 
-                name="user-name" 
-                type="text"
-                id="client"
-                className="name-input"
-                placeholder= "Nombre"
-                value={client}
-               // onChange={handleClient}
-              />
-            </form>
-
+           
 
 
             <table className="table">
@@ -81,7 +57,7 @@ const Order = () => {
                 </tbody>
             </table>
 <h3> Total : ${total} </h3>
-<BttnAgregar 
+<BttnAgregar className= 'btnSend'
 text = 'enviar' 
 onClick = {handleSend}/>
 

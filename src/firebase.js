@@ -17,12 +17,18 @@
   const fb = firebase.initializeApp(firebaseConfig);
 
 const db = fb.firestore()
-
+const updateOrder = async (id, fields) => {
+  try {
+    await db.collection('orders').doc(id).update(fields);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 function addBill(data) {   //crea o agrega a la coleccion order el objeto que reciba por parametros, la orden que se envia a chef
   db.collection('orders').add(data);
 }
-export { db, addBill, firebase };
+export { db, addBill, firebase, updateOrder };
 
 
 

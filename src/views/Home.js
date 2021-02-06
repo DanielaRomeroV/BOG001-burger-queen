@@ -11,7 +11,7 @@ const Home = () => {
     <div className="Home">   
       <div className="Logo">
           <img src={logo} alt="logo"/></div>
-  
+          <div className="Soy"> </div>
 
      <div className='Buttons'>
             <button className="Button">

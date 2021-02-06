@@ -1,10 +1,10 @@
-.bill-box  {
+.order-box  {
  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: start;
+
     height: 50px;
-   
+    justify-content: space-around;
     align-items: center;
     border-top: 1px solid $zeta;
 }
@@ -12,15 +12,19 @@
 .bill-box-quantities, .bill-box-price{
     text-align: center;
 }
-img {
+
+img  {
     margin:auto;
     width: 55%;
     height: 28%;
+    
 }
-.bill-box:hover {
+.order-box:hover {
     background-color: #FF840B;
     color: white;
 }
-.bill-box:nth-child(even) {
+.order-box:nth-child(even) {
     background-color: #ddd;
 }
+
+

@@ -1,5 +1,7 @@
 import React , {useContext} from 'react';
 import {AppContext} from '../AppContext'
+import {updateOrder} from '../firebase'
+import BttnAgregar from '../components/BttnAgregar'
 
 const Chef = () => { 
   const newarray =[]
@@ -12,14 +14,30 @@ const Chef = () => {
         console.log(item.name),
         array.push (item.name)
   ))
+  
 ));
+
+const handleDeliver = (idItem) => {
+  updateOrder(idItem, {  
+    isDone: true,
+  })
+}
     return (
 
       <div className="Home">   
-       {order.map((item, i) => {
-         return <div key ={i}> Total:{item.total} productos : {array[i]}</div>
+       {order.filter((pedido)=> pedido.isDone === false).map((item, i) => {
+         return <div key ={i}> Total:{item.total} productos :
+          {item.products.map((subItem, i) => (
+            <div> {subItem.name}</div>
+          ))}
+           <BttnAgregar 
+              text = "Listo"
+              onClick = {()=> handleDeliver(item.id)}>
+             </BttnAgregar>
+             <br></br>
+          </div>
        })}
-      <div className="Soy"><h1>Holi soy Chef</h1></div></div>
+      <div className="Soy"><h1> Chef</h1></div></div>
     )
 }
 
